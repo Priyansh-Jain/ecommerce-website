@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<!-- <h3>Register</h3>
+
+	<div class="login-form">
+		<form id="login" action="/" method="post" onsubmit="event.preventDefault(); validateMyForm();">
+			<input type="text" name="email" placeholder="E-mail" required=""><br>
+			<input type="text" name="username" placeholder="Username" required=""><br>
+			<input type="password" name="password" placeholder="Password" id="password" required=""><br>
+			<input type="password" name="passwordConf" placeholder="Confirm Password" id="password_conf" required=""><br>
+			<input type="submit" value="REGISTER">
+		</form>
+	</div> -->
+
+
+		<h1>Sign Up</h1>	<form id="login" action="/" class="login-form" method="POST" onsubmit="event.preventDefault(); validateMyForm();">
+
+		<div class="textb">
+			<input type="text" required name="email">
+			<div class="placeholder">Email</div>
+		</div>
+
+		<div class="textb">
+			<input type="text" required name="username">
+			<div class="placeholder">Username</div>
+		</div>
+
+		<div class="textb">
+			<input type="password" required name="password" id="password">
+			<div class="placeholder">Password</div>
+			<div class="show-password fas fa-eye-slash"></div>
+		</div>
+
+		<div class="textb">
+			<input type="password" required name="passwordConf" id="password_conf">
+			<div class="placeholder">Confirm Password</div>
+			<div class="show-password fas fa-eye-slash"></div>
+		</div>
+		
+
+		<button class="btn fas fa-arrow-right" disabled type="submit"></button>
+		<a href="index.html">Already have an account?<br> Log In</a>
+	</form>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
